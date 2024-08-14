@@ -2,6 +2,8 @@
 Repositorio del grupo EliteCoders para la Técnicatura Universitaria en Programación 
 
 ## Integrantes:
+
+```
 >Marina Evangelista
 >Franco Moyano
 >Alexis Henriquez
@@ -9,3 +11,4 @@ Repositorio del grupo EliteCoders para la Técnicatura Universitaria en Programa
 >Manolo Bassot
 >Matias Garcia
 >Montenegro Alexander
+```
