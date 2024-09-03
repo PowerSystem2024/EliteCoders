@@ -11,7 +11,7 @@ public class EjercicioWhile01 {
             
         }
         
-        //Ciclo DoWhile
+        //Ciclo DoWhilw
         var contador = 0;
         do{
             System.out.println("contador = " + contador); 
@@ -22,19 +22,20 @@ public class EjercicioWhile01 {
     /**
      * 1-variable, 2-condicion a cumplir, 3-iteraccion como será
      */
-    Inicio:
     for (var contando = 0; contando < 7; contando++){
         if (contando % 2 == 0){
             System.out.println("contando = " + contando);
-            break Inicio; //para en el primer que /2 es 
+            break; //para en el primer que /2 es 
         }
     }
     
-    // Etiquetas - se combinan con continue or break
-    for (var contando = 0; contando < 7; contando++){
-        if (contando % 2 == 0){
-            System.out.println("contando = " + contando);
-}           
+for (var contando = 0; contando < 7; contando++){
+        if (contando % 2 != 0){ //impares
+            continue; //vamos a la siguiente iteraccion
+        }System.out.println("contando = " + contando);
+}            
+
+    
 }
-}
+    
 }
