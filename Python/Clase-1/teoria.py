@@ -208,3 +208,96 @@ print(tupla)
 
 print(4 in tupla) #Comprobar si un elemento se encuentra en la tupla
 #Lo que podemos usar dentro de tuplas son: index, count, len.
+
+#Repaso de set o conjuntos
+#para definir un conjunto
+conjunto2 = set()
+conjunto1 = {"bye",}
+conjunto2.add (7)
+conjunto2.add("Hola")
+print(conjunto2)
+conjunto1.add("hola")
+print(conjunto1)
+print(3 not in conjunto1) #Preguntamos si el 3 no esta en el conjunto
+
+#Como hacer la igualdad de dos conjuntos
+print(conjunto1 == conjunto2)#Nos devuelve True o False
+
+#Operaciones con conjuntos
+conjunto3 = conjunto1 | conjunto2 #Union de conjuntos
+print(conjunto3)
+
+conjunto3 = conjunto1 & conjunto2 #Interseccion de conjuntos
+print(conjunto3)
+
+conjunto3 = conjunto1 - conjunto2 #Diferencia de conjuntos
+print(conjunto3)
+conjunto3 = conjunto2 - conjunto1
+print(conjunto3)
+
+conjunto3 = conjunto1 ^ conjunto2 #Diferencia simetrica de conjuntos
+print(conjunto3)
+
+conjunto3 = conjunto1 | conjunto2
+print(conjunto2.issubset(conjunto3))#Nos dice si un conjunto es subconjunto de otro
+print(conjunto1.issubset(conjunto3))
+print(conjunto3.issubset(conjunto1))
+print(conjunto3.issubset(conjunto2))
+
+print(conjunto3.issuperset(conjunto2))#Nos dice si un conjunto es superconjunto de otro
+print(conjunto3.issuperset(conjunto1))
+print(conjunto2.issuperset(conjunto3))
+
+#Como saber si ambos conjuntos son disconexos, esto es si no comparten elementos
+print(conjunto1.isdisjoint(conjunto2))
+
+#Convertir un conjunto a totalemente inmutables
+conjunto1 = frozenset(conjunto1)# Esto hace que el conjunto sea inmutable
+#No se puede agregar ni eliminar elementos, ni modificar
+
+#Repaso de diccionarios
+diccionarioNuevo = {"azul": "blue", "rojo": "red", "verde": "green", "amarillo": "yellow"}
+print(diccionarioNuevo)
+
+#Como Eliminar
+del diccionarioNuevo["azul"]
+print(diccionarioNuevo)
+
+#Los diccionarios pueden almacenar cualquier tipo de dato
+diccionario2 = {"Ariel":{'Edad':40, "Altura":1.83}, "Osvaldo":[45,1.85], 'Natalia': [35, 1.67]}
+print(diccionario2)
+
+#Pilas usando listas
+pila = [1,2,3]
+
+#Agregar elementos a la pila por el final
+pila.append(4)
+pila.append(5)
+print(pila)
+
+#Sacamos elementos desde el final
+elemntoBorrado = pila.pop() #Quita el ultimo elemento y lo guarda en la variable
+print(f'Sacamos el elemento: {elemntoBorrado}')
+print(f'La pila ahora quedo asi: {pila}')
+
+#Colas usando listas
+#Estructura de datos de tipo FIFO (First In First Out)
+cola = ['Ariel', 'Osvaldo', 'Liliana', 'Pilar']
+
+#Agregamos elementos al final de la cola
+cola.append('Natalia')
+cola.append('Jose')
+print(cola)
+
+#Sacamos elementos desde el principio
+seRetira = cola.pop(0) #Quita el primer elemento y lo guarda en la variable
+print(f'Atendido el cliente: {seRetira}')
+print(f'Siguen'(cola))
+
+seRetira = cola.pop(0) #Quita el primer elemento y lo guarda en la variable
+print(f'Atendido el cliente: {seRetira}')
+print(f'Siguen'(cola))
+
+seRetira = cola.pop(0) #Quita el primer elemento y lo guarda en la variable
+print(f'Atendido el cliente: {seRetira}')
+print(f'Siguen'(cola))
