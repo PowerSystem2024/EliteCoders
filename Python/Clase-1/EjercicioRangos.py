@@ -4,7 +4,7 @@ for i in range(11):
     if i%3==0:
         print(i,end=" ")
 
-#Ejercicio-2: Crear un rando de 2 a 6 
+#Ejercicio-2: Crear un rango de 2 a 6 
 print('\nEjercicio-2')
 for i in range(2,7):
     print(i,end=" ")
