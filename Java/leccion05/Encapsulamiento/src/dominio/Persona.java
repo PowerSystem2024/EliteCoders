@@ -13,7 +13,7 @@ public class Persona {
         this.sueldo=sueldo;
         this.eliminado=eliminado;
     }  
-    //Métodos SET y GET
+    //Métodos SET y GET para cada atributo
 
     public String getNombre() {
         return nombre;
