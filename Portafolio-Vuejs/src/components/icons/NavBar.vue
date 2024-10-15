@@ -2,41 +2,41 @@
        <nav class="navbar">
         <div class="navbar-menu">
           <ul>
-            <a v-for="nav in navegacion" :key="nav.nombre" href="nav.enlace" class="nav-item" >{{nav.nombre}}</a>  
-
-          </ul>
-          </div>
+        <li><a href="#educacion" class="navbar-item">Educación</a></li>
+        <li><a href="#experiencia" class="navbar-item">Experiencia</a></li>
+        <li><a href="#proyectos" class="navbar-item">Proyectos</a></li>
+        <li><a href="#habilidades" class="navbar-item">Habilidades</a></li>
+      </ul>
+    </div>
     </nav>
 </template>
 
 <script setup>
-import {ref} from 'vue';
-const navegacion= ref([
-    {id:1, nombre:'Educación', enlace:'#educacion'},
-    {id:2, nombre:'Experiencia', enlace:'#experiencia'},
-    {id:3, nombre:'Proyectos', enlace:'#proyectos'},
-    {id:4, nombre:'Habilidades', enlace:'#habilidades'}
-]);
-
+// cualquier lógica o importaciones
 </script>
 
 <style scoped>
+/* Estilos para tu barra de navegación */
 .navbar {
-    background-color:var(--vt-c-indigo);
-    color: #fff;
-    padding: 0.5rem 1rem;
-    align-items: center;
-  }
-.navbar-item {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 1rem;
+  background-color: #333;
+  padding: 10px;
 }
-.navbar-menu {
-  display: flex;
-  justify-content: flex-end;
-}
-.nav-list{
+.navbar-menu ul {
   list-style: none;
+  display: flex;
+  gap: 15px;
 }
+.navbar-item {
+  color: white;
+  text-decoration: none;
+}
+.navbar-item:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
 </style>
