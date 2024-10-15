@@ -28,8 +28,6 @@ import NavBar from './components/icons/NavBar.vue';
       <ul>
         <li>Marina Evangelista</li>
         <li>Franco Moyano</li>
-        <li>Alexis Henriquez</li>
-        <li>Angel Rojas</li>
         <li>Manolo Bassot</li>
         <li>Matias Garcia</li>
         <li>Montenegro Alexander</li>
