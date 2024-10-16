@@ -1,4 +1,12 @@
 from Persona2 import Persona2
 
-persona5 = Persona2('Andres', 'Messi', 37)
-print(persona5.mostrar_detalles())
+print('Creacion de objetos'.center(50, '-'))
+if __name__ == '__main__':
+    persona5 = Persona2('Andres', 'Messi', 37)
+    persona5.mostrar_detalles()
+
+    print(__name__)
+
+print('Eliminacion de objetos'.center(50, '-'))
+
+del persona5
