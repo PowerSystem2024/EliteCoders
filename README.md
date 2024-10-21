@@ -6,8 +6,6 @@ Repositorio del grupo EliteCoders para la Técnicatura Universitaria en Programa
 ```
 >Marina Evangelista
 >Franco Moyano
->Alexis Henriquez
->Angel Rojas
 >Manolo Bassot
 >Matias Garcia
 >Montenegro Alexander
