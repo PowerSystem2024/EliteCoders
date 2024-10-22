@@ -1,3 +1,4 @@
+
 /* Reset de márgenes y padding */
 * {
   margin: 0;
@@ -72,4 +73,5 @@ footer {
   color: white; /* Texto blanco */
   text-align: center; /* Centrar texto */
   padding: 15px 0; /* Espaciado interno */
+
 }

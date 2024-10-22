@@ -1,4 +1,5 @@
 <template>
+
       <nav class="navbar">
         <div class="navbar-logo">
           <img src="@/assets/logoGrupo.jpeg" alt="Logo"/>
@@ -83,4 +84,5 @@
     height: 40px;
   }
 }
+
 </style>
