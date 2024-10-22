@@ -1,6 +1,3 @@
-from typing import override
-
-
 class Persona:
     def __init__(self, nombre, edad):
         self._nombre = nombre
