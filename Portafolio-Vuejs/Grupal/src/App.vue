@@ -1,7 +1,9 @@
 <script setup>
 import NavBar from './components/icons/NavBar.vue';
+
 import DatosGrupo from './components/icons/DatosGrupo.vue';
 import IntegrantesGrupo from './components/icons/IntegrantesGrupo.vue';
+
 //puro js
 
 </script>
@@ -12,6 +14,7 @@ import IntegrantesGrupo from './components/icons/IntegrantesGrupo.vue';
     <NavBar />
     
   </header>
+
   <main>
     <section id="inicio">
     <DatosGrupo />
@@ -22,6 +25,7 @@ import IntegrantesGrupo from './components/icons/IntegrantesGrupo.vue';
     <section id="proyectos"><h2>Proyectos</h2></section>
     <section id="habilidades"><h2>Habilidades</h2></section>
   </main>
+
 </template>
 
 <style scoped>
