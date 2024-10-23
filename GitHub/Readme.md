@@ -341,3 +341,168 @@ git push origin nombre_del_tag
 - **PDF**: [Ver PDF](https://drive.google.com/file/d/14p1D22y8L8DJNdQ6BMmkR22So2b3lWkk/view)
 
 ---
+
+# CLASE 08 MIÉRCOLES 2 DE OCTUBRE DEL 2024 - Portafolio 8  
+## Manejo de ramas en GitHub  
+
+Si no te funciona el comando `gitk`, es posible que no lo tengas instalado por defecto.  
+Para instalar `gitk` debemos ejecutar los siguientes comandos:
+```sh
+sudo apt-get update
+sudo apt-get install gitk
+```
+
+### Repasa: ¿Qué es Git?
+Las ramas nos permiten hacer cambios a nuestros archivos sin modificar la versión principal (`main`). Puedes trabajar con ramas que nunca envías a GitHub, así como pueden haber ramas importantes en GitHub que nunca usas en el repositorio local. Lo crucial es que aprendas a manejarlas para trabajar profesionalmente.  
+
+Si, estando en otra rama, modificamos los archivos y hacemos commit, tanto el historial (`git log`) como los archivos serán afectados. La ventaja que tiene usar ramas es que las modificaciones solo afectarán a esa rama en particular. Si luego de “guardar” los archivos (usando commit) nos movemos a otra rama (`git checkout otraRama`), veremos cómo las modificaciones de la rama pasada no aparecen en la otra rama.  
+
+### Comandos para manejo de ramas en GitHub  
+**Crear una rama:**
+```sh
+git branch branchName # Crear una rama
+git checkout branchName # Movernos a otra rama 
+git checkout -b nombre-de-la-rama # Crear una rama en el repositorio local
+git push origin nombre-de-la-rama # Publicar una rama local al repositorio remoto
+```
+
+Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local con Git utilizando el comando `gitk`. Gitk fue el primer visor gráfico que se desarrolló para ver de manera gráfica el historial de un repositorio de Git.  
+
+---
+
+## PORTAFOLIO  
+Vamos a ver unos videos de cómo avanzar en lo que es un portafolio por el Tutor:  
+**Dante Nicolás Martinez**  
+**Segundo Semestre Parte 7:**  
+- **Video Capítulo 07**: [Ver Video](https://drive.google.com/file/d/13rdccGVNp1cyiximL7PBnzt0obCCID3H/view)
+- **PDF**: [Ver PDF](https://drive.google.com/file/d/1mzSJke4-kr2CX3pBBuFbcgwkEeUqq5Wo/view) 
+
+Revisar y ejecutar cada comando, hacerlo como práctica: **NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.**  
+**Profesor Ariel Betancud**
+
+---
+
+# CLASE 09 MIÉRCOLES 9 DE OCTUBRE DEL 2024 - Portafolio 9  
+## Tarea para antes de las 23 horas:
+Investigar cómo se puede clonar un repo con el HTTPS del mismo, es decir, siendo ustedes los dueños del repositorio y desde la nube quieren traer este repo a su ordenador. Nos pedirá **Username** y **password**: ¿qué se debe hacer para lograr cambios y así utilizar `pull`, `push`, y todo lo necesario para trabajar? Como referencia, solo usuario y contraseña no será suficiente, ya que esto cambió desde el año 2021.  
+
+---
+
+## Configurar múltiples colaboradores en un repositorio de GitHub  
+Por defecto, cualquier persona puede clonar o descargar tu proyecto desde GitHub, pero no pueden crear commits ni ramas. Esto quiere decir que pueden copiar tu proyecto pero no colaborar con él si es público. Si el repositorio es privado, es necesario que hagas una invitación, de lo contrario no podrán verlo.  
+
+### Cómo agregar colaboradores en Github
+Solo debemos entrar a la configuración de colaboradores de nuestro proyecto:
+1. Repositorio > Settings > Collaborators  
+2. Ahí, debemos añadir el email o username de los nuevos colaboradores.  
+
+---
+
+## Si, como colaborador, agregaste erróneamente el mensaje del commit, lo puedes cambiar:
+```sh
+git commit --amend # Corregimos el mensaje
+git pull origin main # Traer el repositorio remoto
+git push --set-upstream origin main # Ejecutar el cambio, el error arreglado
+```
+
+---
+
+## Comienzo del colaborador  
+```sh
+cd Documentos # Abre git bash
+mkdir class-git # Crea la carpeta o directorio de trabajo
+ls -al # Revisa los archivos o directorios existentes
+```
+1. No debe hacer un `git init`; debe buscar el repositorio en el cual está invitado a participar (en GitHub).  
+2. Pasa a clonar desde HTTPS, copiando la URL, ya que no se arranca el proyecto desde cero.  
+3. En git bash, ejecuta:
+   ```sh
+   git clone url-copiada-github
+   ```
+   Si el repositorio es público, no pedirá usuario ni contraseña.  
+
+4. Abrir VSC con:
+   ```sh
+   code .
+   ```
+   O bien abrir con vim y modificar:
+   ```sh
+   vim historia.txt # Escribir: Aquí está un nuevo colaborador
+   ```
+   Luego:
+   ```sh
+   ctrl + x # Para salir
+   s # Guardar
+   enter # Confirmar
+   ```
+
+5. Hacer commit:
+   ```sh
+   git commit -am "Mi primer commit, estoy muy emocionado!!!"
+   git pull origin main
+   git fetch
+   git branch # Ver las ramas disponibles
+   git log # Ver toda la historia
+   git log --graph # Ver el gráfico de ramas y commits
+   git push origin main # Pedirá email y contraseña del colaborador
+   ```
+
+6. Si se recibe un **denegado**, significa que no tienes acceso. El dueño del repositorio no te agregó como colaborador.  
+   Ve a **Settings > Collaborators** y agrega el correo o username del colaborador.  
+
+7. El colaborador debe aceptar la invitación. Una vez aceptada, podrá hacer push al repositorio.
+
+8. **El dueño no ve los cambios:**  
+   ```sh
+   git pull origin main
+   git fetch
+   git log --stat # Ver el primer commit del colaborador
+   ```
+
+9. A partir de aquí, el dueño y el colaborador deben repartir el trabajo en ramas. Por ejemplo:
+   - El dueño trabaja en la rama `header`
+   - El colaborador trabaja en la rama `footer`
+   - Al final, se hace un merge para integrar el proyecto completo.
+
+---
+
+## PORTAFOLIO  
+Vamos a ver unos videos de cómo avanzar en lo que es un portafolio por el Tutor:  
+**Dante Nicolás Martinez**  
+**Segundo Semestre Parte 8:**  
+- **Video Capítulo 08**: [Ver Video](https://drive.google.com/file/d/1e55H586Q_-znRiJHl7jSuJTud-UVf-ZX/view)
+- **PDF**: [Ver PDF](https://drive.google.com/file/d/1Pa8KQK65csbgLEI_BAd2AOdonDarsLBU/view) 
+
+Revisar y ejecutar cada comando, hacerlo como práctica: **NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.**  
+**Profesor Ariel Betancud**
+
+---
+
+# CLASE 10 MIÉRCOLES 16 DE OCTUBRE DEL 2024 - Portafolio 10
+
+## Flujo de trabajo profesional
+### Haciendo merge de ramas de desarrollo a main
+
+Para poder desarrollar software de manera óptima y ordenada, necesitamos tener un flujo de trabajo profesional que nos permita trabajar en conjunto sin interrumpir el trabajo de otros desarrolladores.
+
+Una buena práctica de flujo de trabajo sería la siguiente:
+
+1. Crear ramas
+2. Asignar una rama a cada programador
+3. El programador baja el repositorio con `git pull origin master`
+4. El programador cambia de rama
+5. El programador trabaja en esa rama y hace commits
+6. El programador sube su trabajo con `git push origin #nombre_rama`
+7. El encargado de organizar el proyecto baja, revisa y unifica todos los cambios
+
+---
+
+## PORTAFOLIO
+Vamos a ver unos videos de cómo avanzar en lo que es un portafolio por el Tutor:
+**Dante Nicolás Martinez**  
+**Segundo Semestre Parte 8:**
+- **Video Capítulo 08**: [Ver Video](https://drive.google.com/file/d/1Z80SxVKmkzhzVY5hIxTDtWjHfryHgt1J/view)
+- **PDF**: [Ver PDF](https://drive.google.com/file/d/1SwPO2PrveW0DRGXyfzKD9yYWeKJUlCkm/view) 
+
+Revisar y ejecutar cada comando, hacerlo como práctica: **NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.**  
+**Profesor Ariel Betancud**
