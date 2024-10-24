@@ -500,9 +500,31 @@ Una buena práctica de flujo de trabajo sería la siguiente:
 ## PORTAFOLIO
 Vamos a ver unos videos de cómo avanzar en lo que es un portafolio por el Tutor:
 **Dante Nicolás Martinez**  
-**Segundo Semestre Parte 8:**
-- **Video Capítulo 08**: [Ver Video](https://drive.google.com/file/d/1Z80SxVKmkzhzVY5hIxTDtWjHfryHgt1J/view)
+**Segundo Semestre Parte 9:**
+- **Video Capítulo 09**: [Ver Video](https://drive.google.com/file/d/1Z80SxVKmkzhzVY5hIxTDtWjHfryHgt1J/view)
 - **PDF**: [Ver PDF](https://drive.google.com/file/d/1SwPO2PrveW0DRGXyfzKD9yYWeKJUlCkm/view) 
+
+Revisar y ejecutar cada comando, hacerlo como práctica: **NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.**  
+**Profesor Ariel Betancud**
+
+---
+
+# CLASE 11 MIÉRCOLES 23 DE OCTUBRE DEL 2024 - Portafolio 11
+
+## Flujo de trabajo profesional -> Archivos binarios
+
+Las imágenes cargándolas en el repositorio representan un problema porque son pesadas. Si las subimos al repositorio, cada vez que hagamos cambios tendremos que traer la imagen completa nuevamente. Estas imágenes se consideran archivos binarios para GitHub, y mientras más binarios carguemos, más pesado será el repositorio, lo que no es parte de las buenas prácticas.
+
+Otra cosa muy importante a tener en cuenta es que en cada commit que hagamos hay un tamaño predefinido para la carga, que no podemos superar. El límite es de **100 MB**. Si acoplamos un archivo binario en un commit que supere ese tamaño, tendremos problemas, ya que no podremos seguir haciendo commits: Git siempre arrastrará ese archivo binario, impidiendo avanzar.
+
+---
+
+## PORTAFOLIO
+Vamos a ver unos videos de cómo avanzar en lo que es un portafolio por el Tutor:  
+**Dante Nicolás Martinez**  
+**Segundo Semestre Parte 10:**
+- **Video Capítulo 10**: [Ver Video](https://drive.google.com/file/d/14Ykgp8zJcjjuZlg_JSFiwmjeIT7qUt27/view)
+- **PDF**: [Ver PDF](https://drive.google.com/file/d/1RTKm9QSD_ylnDD3Q719lYqhlYW48cOHe/view)  
 
 Revisar y ejecutar cada comando, hacerlo como práctica: **NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.**  
 **Profesor Ariel Betancud**
