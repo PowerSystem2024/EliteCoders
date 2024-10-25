@@ -1,3 +1,4 @@
+# Rectangulo.py
 from FiguraGeometrica import FiguraGeometrica
 from Color import Color
 
