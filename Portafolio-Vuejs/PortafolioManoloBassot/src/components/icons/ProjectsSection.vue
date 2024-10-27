@@ -22,6 +22,8 @@
 
 
 <script>
+import imagenPseint from '/public/logoPseint.png';
+import imagenJava from '/public/logoJava.png';
 export default {
   data() {
     return {
@@ -30,7 +32,7 @@ export default {
           name: "Inventario PSint",
           description:
             "Sistema de Gestión de Stock: Una solución simple y eficiente para el control de inventario en comercios. Permite visualizar, agregar, modificar y eliminar productos del stock, además de realizar simulaciones de ventas para monitorear la disponibilidad de los productos en tiempo real.",
-          image: "/public/logoPseint.png",
+          image: imagenPseint,
           github: "https://github.com/manolobassot",
           language: { name: "PSeint", icon: "fas fa-cogs" }, 
         },
@@ -38,7 +40,7 @@ export default {
           name: "Inventory Java",
           description:
             "Stock Management System: A simple and efficient inventory control solution for retail businesses. It allows users to view, add, modify, and delete stock items, as well as simulate sales transactions to track product availability in real time.",
-          image: "/public/logoJava.png",
+          image: imagenJava,
           github: "https://github.com/PowerSystem2024/ProyectoEliteCoders",
           language: { name: "Java", icon: "fab fa-java" },
         },
