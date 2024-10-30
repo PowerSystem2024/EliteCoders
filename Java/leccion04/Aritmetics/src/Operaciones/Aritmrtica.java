@@ -9,7 +9,6 @@ public class Aritmrtica {
     int a ;
     int b ;
     
-<<<<<<< HEAD
     //El constructor es un metodo especial
     public Aritmrtica(){//Constructor 1
         System.out.println("Se está ejecutando ete constructor número uno");
@@ -23,8 +22,6 @@ public class Aritmrtica {
         
     }
     
-=======
->>>>>>> main
     //Metodo
     public  void  sumarNumero(){
         int resultado= a + b ;
@@ -33,7 +30,6 @@ public class Aritmrtica {
     
     }
     
-<<<<<<< HEAD
         // Método sin argumentos, retorna un valor fijo.
     public int sumarConRetorno() {
         int a = 5;
@@ -49,7 +45,3 @@ public class Aritmrtica {
     
     
 
-=======
-    
-}
->>>>>>> main
