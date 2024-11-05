@@ -528,3 +528,4 @@ Vamos a ver unos videos de cómo avanzar en lo que es un portafolio por el Tutor
 
 Revisar y ejecutar cada comando, hacerlo como práctica: **NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.**  
 **Profesor Ariel Betancud**
+
