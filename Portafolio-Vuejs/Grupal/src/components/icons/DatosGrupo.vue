@@ -21,10 +21,30 @@ const presentacion = "¡Bienvenidos a nuestro portafolio grupal! Somos un equipo
   justify-content: center;
   align-items: center;
   height: 75vh;
-  background-color: #202020; /* Celeste claro de fondo */
+  background: linear-gradient(-45deg, #021526, #03346E, #6EACDA, #E2E2B6); /* Fondo degradado */
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 12px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.datos-grupo:hover {
+  background-color: #1a1a1a; /* Fondo negro más claro al pasar el cursor */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
 .card {
@@ -34,6 +54,12 @@ const presentacion = "¡Bienvenidos a nuestro portafolio grupal! Somos un equipo
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
   max-width: 600px;
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el cursor */
 }
 
 .card h1 {
@@ -71,4 +97,5 @@ const presentacion = "¡Bienvenidos a nuestro portafolio grupal! Somos un equipo
     font-size: 0.9rem;
   }
 }
+
 </style>
