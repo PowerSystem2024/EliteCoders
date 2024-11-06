@@ -1,0 +1,39 @@
+/* base.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #333; /* Fondo gris */
+  color: #333;
+  line-height: 1.6;
+  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* Estilo para botones */
+button {
+  background-color: #007bff; /* Azul eléctrico */
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #333; /* Azul más oscuro al pasar el ratón */
+}
