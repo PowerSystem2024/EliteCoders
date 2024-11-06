@@ -34,6 +34,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
   border-radius: 8px; /* Bordes redondeados */
   margin-bottom: 20px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar:hover {
+  background-color: #014377; /* Azul más oscuro al pasar el cursor */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
 /* Logo */
@@ -61,6 +67,7 @@
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
+  transition: color 0.3s, text-decoration 0.3s;
 }
 
 .navbar-item:hover {

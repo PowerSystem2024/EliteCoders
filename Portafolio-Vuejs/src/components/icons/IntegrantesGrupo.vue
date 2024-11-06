@@ -3,7 +3,7 @@ import Marina from '@/assets/FotosIntegrantes/marina.jpeg';
 import Franco from '@/assets/FotosIntegrantes/franco.png';
 import Manolo from '@/assets/FotosIntegrantes/manolo.jpeg';
 import Matias from '@/assets/FotosIntegrantes/matias.jpeg';
-import Alexander from '@/assets/FotosIntegrantes/alexander.png';
+import Alexander from '@/assets/FotosIntegrantes/alexander.jpg';
 import { ref } from 'vue';
 
 const integrantes = ref([
@@ -50,11 +50,11 @@ const integrantes = ref([
   {
     id: 5,
     nombre: 'Alexander Montenegro',
-    edad: "null",
+    edad: "22",
     localidad: 'San rafael, Mendoza',
     foto: Alexander,
     github: 'https://github.com/AlexMS7',
-    instagram: 'Colocar link',
+    instagram: 'https://www.instagram.com/aleex.mn/',
     linkedin: 'Colocar link'
   },
 ]);
@@ -83,13 +83,30 @@ const integrantes = ref([
   </template>
 
 <style scoped>
-/* Contenedor general de la línea de tiempo */
 .timeline {
   position: relative;
   width: 100%;
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
+  background: linear-gradient(-45deg, #021526, #03346E, #6EACDA, #E2E2B6); /* Fondo degradado */
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Línea central */
@@ -109,6 +126,12 @@ const integrantes = ref([
   position: relative;
   width: 45%;
   margin-bottom: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Alineación a la izquierda y derecha */
@@ -123,7 +146,7 @@ const integrantes = ref([
 
 /* Contenido del integrante */
 .content {
-  background-color: #202020; /* Celeste claro */
+  background-color: #f9f9f9; /* Fondo claro */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -157,8 +180,6 @@ const integrantes = ref([
   margin-bottom: 10px;
 }
 
-
-
 /* Responsividad */
 @media (max-width: 768px) {
   .timeline-item {
@@ -175,13 +196,16 @@ const integrantes = ref([
     display: none;
   }
 }
+
 .redes {
   display: flex;
   justify-content: center; /* Centra los íconos */
   gap: 10px; /* Espacio entre los íconos */
 }
+
 .redes i {
   font-size: 24px; /* Tamaño del ícono */
   color: #333; /* Color del ícono */
 }
+
 </style>
