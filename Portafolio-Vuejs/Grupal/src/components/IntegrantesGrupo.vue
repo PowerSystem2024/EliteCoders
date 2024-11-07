@@ -40,7 +40,7 @@ const integrantes = ref([
   {
     id: 4,
     nombre: 'Matias Garcia',
-    edad: "null",
+    edad: "18",
     localidad: 'San Rafael, Mendoza',
     foto: Matias,
     github: 'https://github.com/hellomaty',
