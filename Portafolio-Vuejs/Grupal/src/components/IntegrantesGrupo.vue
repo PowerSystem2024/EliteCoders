@@ -10,7 +10,7 @@ const integrantes = ref([
   {
     id: 1,
     nombre: 'Marina Evangelista',
-    edad: "null",
+    edad: "28",
     localidad: 'Localidad, Buenos Aires',
     foto: Marina,
     github: 'https://github.com/marinaev12',
@@ -20,18 +20,18 @@ const integrantes = ref([
   {
     id: 2,
     nombre: 'Franco Moyano',
-    edad: "null",
-    localidad: 'San rafael, Mendoza',
+    edad: "24",
+    localidad: 'San Rafael, Mendoza',
     foto: Franco,
     github: 'https://github.com/franmoyano',
-    instagram: 'Colocar link',
-    linkedin: 'Colocar link'
+    instagram: 'https://www.instagram.com/franco.moyano_',
+    linkedin: 'https://www.linkedin.com/in/franco-moyano/'
   },
   {
     id: 3,
     nombre: 'Manolo Bassot',
     edad: 26,
-    localidad: 'San rafael, Mendoza',
+    localidad: 'San Rafael, Mendoza',
     foto: Manolo,
     github: 'https://github.com/manolobassot',
     instagram: 'https://www.instagram.com/mbassot/?hl=es',
@@ -40,8 +40,8 @@ const integrantes = ref([
   {
     id: 4,
     nombre: 'Matias Garcia',
-    edad: "null",
-    localidad: 'San rafael, Mendoza',
+    edad: "18",
+    localidad: 'San Rafael, Mendoza',
     foto: Matias,
     github: 'https://github.com/hellomaty',
     instagram: 'Colocar link',
@@ -51,7 +51,7 @@ const integrantes = ref([
     id: 5,
     nombre: 'Alexander Montenegro',
     edad: "22",
-    localidad: 'San rafael, Mendoza',
+    localidad: 'San Rafael, Mendoza',
     foto: Alexander,
     github: 'https://github.com/AlexMS7',
     instagram: 'https://www.instagram.com/aleex.mn/',
@@ -61,26 +61,23 @@ const integrantes = ref([
 </script>
 
 <template>
-    <div class="timeline">
-      <div 
-        v-for="(integrante, index) in integrantes" 
-        :key="integrante.id" 
-        :class="['timeline-item', index % 2 === 0 ? 'left' : 'right']"
-      >
-        <div class="content">
-          <img :src="integrante.foto" :alt="`Foto de ${integrante.nombre}`" class="integrante-foto" />
-          <h2>{{ integrante.nombre }}</h2>
-          <p>Edad: {{ integrante.edad }}</p>
-          <p>Localidad: {{ integrante.localidad }}</p>
-          <div class="redes">
-            <a :href="integrante.github" target="_blank"><i class="fab fa-github"></i></a> | 
-            <a :href="integrante.instagram" target="_blank"><i class="fab fa-instagram"></i></a> | 
-            <a :href="integrante.linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-          </div>
+  <div class="timeline">
+    <div v-for="(integrante, index) in integrantes" :key="integrante.id"
+      :class="['timeline-item', index % 2 === 0 ? 'left' : 'right']">
+      <div class="content">
+        <img :src="integrante.foto" :alt="`Foto de ${integrante.nombre}`" class="integrante-foto" />
+        <h2>{{ integrante.nombre }}</h2>
+        <p>Edad: {{ integrante.edad }}</p>
+        <p>Localidad: {{ integrante.localidad }}</p>
+        <div class="redes">
+          <a :href="integrante.github" target="_blank"><i class="fab fa-github"></i></a> |
+          <a :href="integrante.instagram" target="_blank"><i class="fab fa-instagram"></i></a> |
+          <a :href="integrante.linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
     </div>
-  </template>
+  </div>
+</template>
 
 <style scoped>
 .timeline {
@@ -89,7 +86,8 @@ const integrantes = ref([
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background: linear-gradient(-45deg, #021526, #03346E, #6EACDA, #E2E2B6); /* Fondo degradado */
+  background: linear-gradient(-45deg, #021526, #03346E, #6EACDA, #E2E2B6);
+  /* Fondo degradado */
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   border-radius: 8px;
@@ -101,9 +99,11 @@ const integrantes = ref([
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -117,7 +117,8 @@ const integrantes = ref([
   top: 0;
   width: 4px;
   height: 100%;
-  background-color: #0277bd; /* Azul oscuro */
+  background-color: #0277bd;
+  /* Azul oscuro */
   transform: translateX(-50%);
 }
 
@@ -146,7 +147,8 @@ const integrantes = ref([
 
 /* Contenido del integrante */
 .content {
-  background-color: #f9f9f9; /* Fondo claro */
+  background-color: #f9f9f9;
+  /* Fondo claro */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -199,13 +201,16 @@ const integrantes = ref([
 
 .redes {
   display: flex;
-  justify-content: center; /* Centra los íconos */
-  gap: 10px; /* Espacio entre los íconos */
+  justify-content: center;
+  /* Centra los íconos */
+  gap: 10px;
+  /* Espacio entre los íconos */
 }
 
 .redes i {
-  font-size: 24px; /* Tamaño del ícono */
-  color: #333; /* Color del ícono */
+  font-size: 24px;
+  /* Tamaño del ícono */
+  color: #333;
+  /* Color del ícono */
 }
-
 </style>

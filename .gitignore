@@ -102,3 +102,6 @@ nb-configuration.xml
 ## Miscellaneous
 ##############################
 *.log
+
+/node_modules
+**/node_modules
