@@ -106,9 +106,14 @@ const habilidades = ref([
   background-color: rgba(241, 245, 243, 0.856);
   padding: 0.3em;
   border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(2, 151, 151, 0.963);
   flex: 1 1 200px;
   max-width: 250px;
+}
+
+.skill:hover {
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+  cursor: default;
+  transition: .4s ease;
 }
 
 .skill img {
